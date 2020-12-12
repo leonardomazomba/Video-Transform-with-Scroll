@@ -1,4 +1,4 @@
-# Exemplo de pagina de contagem regressiva para ano novo
+# Exemplo de pagina inicial com video antes de conteúdo
 
 ## ScreenShots
 
