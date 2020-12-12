@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Video Transform with Scroll</title>
+</head>
+<body>
+    <section class="banner">
+        <video src="src/video.mp4" autoplay muted loop></video>
+    </section>
+    <div class="container">
+        <h2>Scroll To See Magic</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo voluptatem maiores ut excepturi dolorum aut doloribus quod quae, quia a ab ducimus dolorem iure consectetur hic! Eius explicabo distinctio ducimus!
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, pariatur. Velit cumque aliquam necessitatibus magni, repellat soluta vitae, quia fuga quis omnis non aperiam, ipsa unde. Cum architecto rem rerum.
+           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima aliquid sapiente totam repudiandae, perferendis labore laboriosam, doloribus quod, quidem nihil et! Quidem ad iure harum, tempore dolorem vero quas perferendis.
+        </p>
+        <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae libero, officiis culpa ex dolorum ab a architecto asperiores quam! Ratione minus officiis tenetur, in aspernatur recusandae at reprehenderit dolore sequi.
+           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo voluptatem maiores ut excepturi dolorum aut doloribus quod quae, quia a ab ducimus dolorem iure consectetur hic! Eius explicabo distinctio ducimus!
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, pariatur. Velit cumque aliquam necessitatibus magni, repellat soluta vitae, quia fuga quis omnis non aperiam, ipsa unde. Cum architecto rem rerum.
+           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima aliquid sapiente totam repudiandae, perferendis labore laboriosam, doloribus quod, quidem nihil et! Quidem ad iure harum, tempore dolorem vero quas perferendis.
+           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo voluptatem maiores ut excepturi dolorum aut doloribus quod quae, quia a ab ducimus dolorem iure consectetur hic! Eius explicabo distinctio ducimus!
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, pariatur. Velit cumque aliquam necessitatibus magni, repellat soluta vitae, quia fuga quis omnis non aperiam, ipsa unde. Cum architecto rem rerum.
+           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima aliquid sapiente totam repudiandae, perferendis labore laboriosam, doloribus quod, quidem nihil et! Quidem ad iure harum, tempore dolorem vero quas perferendis.
+        </p>
+        <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae libero, officiis culpa ex dolorum ab a architecto asperiores quam! Ratione minus officiis tenetur, in aspernatur recusandae at reprehenderit dolore sequi.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo voluptatem maiores ut excepturi dolorum aut doloribus quod quae, quia a ab ducimus dolorem iure consectetur hic! Eius explicabo distinctio ducimus!                    
+        </p>
+    </div>
+    <script type="text/javascript">
+        const banner = document.querySelector('.banner');
+        window.addEventListener('scroll',function(){
+            const val = 890 - window.scrollY;
+            banner.style.clipPath = "circle("+ val +"px at center center)";
+        })
+    </script>
+</body>
+</html>
